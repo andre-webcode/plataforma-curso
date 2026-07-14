@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
-import "./globals.css";
 
-const nunito = Nunito({
-  subsets: ["latin"],
-});
+import "./globals.css";
+import { Header } from "@/components/header/Header";
+
+const nunito = Nunito({ subsets: ["latin"],});
 
 export const metadata: Metadata = {
   title: "Plataforma de Curso",
@@ -17,11 +17,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="pt-Br"
-      className={`${nunito} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="pt-Br" className={`${nunito} h-full antialiased`}>
+      <body className="min-h-full flex flex-col">
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
