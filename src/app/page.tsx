@@ -9,7 +9,12 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className=''>
-      <Card />
+      <Card
+        description="Na primeira aula de API em Node e Typescript"
+        href=""
+        image='/node.png'
+        title='Curso de API'
+      />
     </main>
 
   );
