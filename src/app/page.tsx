@@ -9,7 +9,10 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className=''>
-    <Section />
+      <Section
+       title="Veja mais cursos"
+       variant="h-list"
+        />
 
     </main>
 
