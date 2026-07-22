@@ -49,7 +49,7 @@ export const Header = () => {
                 data-open={drawer}
                 onClick={() => setDrawer(false)}
                 tabIndex={drawer ? undefined : -1}
-                className="bg-gradient-to-r from-background fixed top-0 left-0 bottom-0 right-0 transition-transform data-[open=false]:-translate-x-full">
+                className="bg-linear-to-r from-background fixed top-0 left-0 bottom-0 right-0 transition-transform data-[open=false]:-translate-x-full">
                 <ul className="flex gap-4 flex-col p-4 w-60 h-full bg-background" onClick={e => e.stopPropagation()}>
                     <li className="">
                         <Link href='/' data-active={currentPath === '/'} className="data-[active=true]:underline">

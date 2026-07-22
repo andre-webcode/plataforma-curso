@@ -1,4 +1,4 @@
-import { Card } from "@/components/card/Card";
+import { Section } from "@/components/section/Section";
 import { Metadata } from "next";
 
 
@@ -9,12 +9,8 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className=''>
-      <Card
-        description="Na primeira aula de API em Node e Typescript"
-        href=""
-        image='/node.png'
-        title='Curso de API'
-      />
+    <Section />
+
     </main>
 
   );
